@@ -1,0 +1,98 @@
+/* .projects {
+    h2 {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      color: #343a40;
+    }
+
+    .card-text {
+      font-size: 1rem;
+    }
+
+    .btn-outline-primary {
+      margin-top: 0.5rem;
+    }
+
+    .bi {
+      font-size: 1.3rem;
+    }
+  }
+ */
+
+ .projects-section {
+  //background-color: #f8f9fa;
+  position: relative;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(58, 123, 213, 0.2);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.project-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title i {
+  color: #3a7bd5;
+  margin-right: 10px;
+}
+
+.authors .badge {
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-weight: normal;
+}
+
+.tech-badge {
+  background-color: rgba(58, 123, 213, 0.1);
+  color: #3a7bd5;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background-color: #3a7bd5 !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+.project-actions .btn {
+  transition: all 0.2s ease;
+}
+
+.project-actions .btn:hover {
+  transform: translateY(-2px);
+}

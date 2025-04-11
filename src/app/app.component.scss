@@ -1,0 +1,28 @@
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 0.7rem 0.85rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(30px);
+    transition: all 0.4s ease;
+
+    &.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    &:hover {
+      background-color: #b0b300;
+    }
+  }
+
+  .dark-theme .back-to-top {
+    background-color: #222;
+    color: #fff;
+  }

@@ -1,0 +1,32 @@
+<section class="skills py-5" id="skills">
+  <div class="container">
+      <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold position-relative d-inline-block">
+              <span class="section-title">Compétences</span>
+          </h2>
+          <p class="text-muted mt-3">Technologies que je maîtrise et utilise fréquemment</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+          <div class="col-lg-5 col-md-6" *ngFor="let group of skills" data-aos="fade-up" data-aos-duration="800">
+              <div class="skill-card card h-100 border-0 shadow-sm hover-effect">
+                  <div class="card-header bg-white border-0 py-3">
+                      <h5 class="card-title mb-0 d-flex align-items-center">
+                          <i class="bi {{getSkillIcon(group.title)}} me-2 text-primary"></i>
+                          <!-- {{ getSkillIcon(group.title) }} -->
+                          {{ group.title }}
+                      </h5>
+                  </div>
+                  <div class="card-body">
+                      <ul class="list-unstyled mb-0">
+                          <li *ngFor="let item of group.items" class="skill-item py-2 d-flex align-items-center">
+                              <i class="bi bi-check-circle-fill text-success me-3"></i>
+                              <span>{{ item }}</span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

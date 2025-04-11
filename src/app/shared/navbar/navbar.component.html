@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" routerLink="/">
+        <img src="assets/aliou.jpg" class="img-fluid rounded-circle shadow" alt="Aliou Badji" width="20" height="20">
+        Aliou Badji
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="btn btn-sm btn-light ms-3" (click)="toggleTheme()">
+        <i class="bi" [ngClass]="{ 'bi-moon': !isDark, 'bi-sun': isDark }"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Formations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
