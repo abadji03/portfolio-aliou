@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { skills } from '../../donnees.model';
 
 @Component({
   selector: 'app-skills',
@@ -8,34 +9,13 @@ import { Component } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
-export class SkillsComponent {
+export class SkillsComponent implements OnInit {
 
-  skills = [
-    {
-      title: 'Langages de programmation',
-      items: ['Python', 'Java', 'JavaScript', 'PHP', 'SQL']
-    },
-    {
-      title: 'Technologies Web & Mobile',
-      items: ['HTML5', 'CSS3', 'Bootstrap', 'Angular', 'Node.js', 'Android']
-    },
-    {
-      title: 'Base de données',
-      items: ['MySQL', 'Access']
-    },
-    {
-      title: 'Outils & autres',
-      items: ['Figma', 'WordPress', 'Suite Office (Word, Excel, PowerPoint)']
-    },
-    {
-      title: 'Méthodes et modélisation',
-      items: ['UML', 'Merise']
-    },
-    {
-      title: 'Autres compétences',
-      items: ['Machine Learning', 'Documentation', 'Recherche']
-    }
-  ];
+  skills:any;
+
+  ngOnInit(): void {
+    this.skills = skills
+  }
 
   getSkillIcon(title: string): string {
     const normalizedTitle = title.toLowerCase().trim();

@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
     .nav-link {
@@ -13,5 +13,140 @@
       &.active {
         text-decoration: underline;
       }
+    }
+  }
+ */
+
+  /* Style de base */
+  nav {
+    background: linear-gradient(135deg, #2a9d8f 0%, #1d6b63 100%);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 0.8rem 0;
+  }
+
+  nav.scrolled {
+    background: rgba(42, 157, 143, 0.95) !important;
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-brand:hover {
+    transform: scale(1.02);
+  }
+
+  .brand-text {
+    position: relative;
+  }
+
+  .brand-text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+  }
+
+  .navbar-brand:hover .brand-text::after {
+    width: 100%;
+  }
+
+  /* Style des liens */
+  .nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::before {
+    width: 100%;
+  }
+
+  .nav-link span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link:hover span {
+    transform: translateY(-100%);
+  }
+
+  /* Style spécial pour le contact */
+  .contact-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .contact-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Bouton thème */
+  .theme-toggle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .theme-toggle:hover {
+    transform: rotate(15deg) scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Version mobile */
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      background: linear-gradient(135deg, #2a9d8f 0%, #1d6b63 100%);
+      padding: 1rem;
+      margin-top: 0.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-link:last-child {
+      border-bottom: none;
+    }
+
+    .contact-link {
+      background: none;
+      margin-left: 0;
+    }
+
+    .theme-toggle {
+      margin-left: 1rem !important;
     }
   }

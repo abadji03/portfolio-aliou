@@ -1,24 +1,102 @@
-<section class="about container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-5 text-center mb-4 mb-md-0" data-aos="fade-right">
-        <img src="assets/aliou.jpg" class="img-fluid rounded-circle shadow" alt="Aliou Badji" width="250" height="250">
+<section class="about-section py-5" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Photo de profil avec effets visuels -->
+      <div class="col-lg-5 col-md-6">
+        <div class="profile-container text-center" data-aos="zoom-in" data-aos-duration="800">
+          <div class="profile-img-wrapper">
+            <img src="assets/aliou.jpg" class="profile-img img-fluid rounded-circle shadow-lg"
+                 alt="Aliou Badji" width="300">
+            <div class="circle-decoration-1"></div>
+            <div class="circle-decoration-2"></div>
+          </div>
+
+          <!-- Badges de compétences -->
+          <div class="skills-badges mt-4">
+            <span class="badge bg-primary mb-2">Développement Web</span>
+            <span class="badge bg-success mb-2">Applications Mobile</span>
+            <span class="badge bg-info mb-2">Recherche Technologique</span>
+            <!-- <span class="badge bg-warning mb-2">Accessibilité Numérique</span> -->
+          </div>
+        </div>
       </div>
-      <div class="col-md-7" data-aos="fade-left">
-        <h2 class="mb-3">À propos de moi</h2>
-        <p class="mb-3">
-          Je m'appelle <strong>Aliou BADJI</strong>, j'ai 31 ans et je suis un développeur web & mobile passionné, basé à Ziguinchor, Sénégal.
-        </p>
-        <p class="mb-3">
-          <em>Je suis un sourd mais pas muet</em>. Je communique parfaitement à l’oral comme à l’écrit, et j’utilise les technologies de messagerie instantanée. Je comprends également la lecture labiale dans certains cas.
-        </p>
-        <p class="mb-3">
-          Titulaire d’un Master en Génie Logiciel, j’ai acquis de l’expérience dans plusieurs projets liés au développement web, mobile et à la recherche.
-        </p>
-        <ul class="list-unstyled">
-          <li><strong>Localisation :</strong> Diabir, Ziguinchor - Sénégal</li>
-          <li><strong>Email :</strong> <a href="mailto:abadji3992@gmail.com">abadji3992&#64;gmail.com</a></li>
-          <li><strong>Téléphone :</strong> +221 77 985 29 75</li>
-        </ul>
+
+      <!-- Contenu texte -->
+      <div class="col-lg-7 col-md-6" data-aos="fade-left" data-aos-duration="800">
+        <div class="about-content">
+          <h2 class="section-title mb-4 text-success display-5 fw-bold">
+            <i class="bi bi-person-fill text-gradient me-3"></i>
+            <span class="title-highlight">À propos</span> de moi
+          </h2>
+
+          <div class="about-text">
+            <p class="lead-text mb-4">
+              Je m'appelle <span class="highlight-name">Aliou BADJI</span>, <span class="highlight-age">31 ans</span>,
+              <span class="highlight-role"> passionné du développement d'applications, de la recherce et de l'IA </span>.
+            </p>
+
+            <div class="special-note mb-4 p-3">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-ear-fill me-3 fs-4 text-warning"></i>
+                <div>
+                  <em>Je suis un sourd mais pas muet</em>. Je communique parfaitement à l'oral comme à l'écrit,
+                  et j'utilise les technologies de messagerie instantanée. Je peux comprendre également à travers la lecture labiale.
+                </div>
+              </div>
+            </div>
+
+            <div class="education-card mb-4 p-3">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-award-fill me-3 fs-4 text-primary"></i>
+                <div>
+                  Titulaire d'un <strong>Master en Génie Logiciel</strong>, j'ai eu à travaillé sur plusieurs projets de recherche
+                  et de développement en Informatique.
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card p-4">
+              <h5 class="info-title mb-3">
+                <i class="bi bi-info-circle-fill me-2"></i>Informations personnelles
+              </h5>
+              <ul class="info-list list-unstyled">
+                <li class="info-item py-2">
+                  <i class="bi bi-geo-alt-fill me-2 text-danger"></i>
+                  <strong>Adresse actuelle :</strong> Diabir, Ziguinchor - Sénégal
+                </li>
+                <li class="info-item py-2">
+                  <i class="bi bi-geo-alt-fill me-2 text-danger"></i>
+                  <strong>Autre adresse :</strong> Thiaroye/Mer, Pikine - Sénégal
+                </li>
+                <li class="info-item py-2">
+                  <i class="bi bi-envelope-fill me-2 text-success"></i>
+                  <strong>Email personnel : </strong>
+                  <a href="mailto:abadji3992@gmail.com" class="email-link"> abadji3992&#64;gmail.com</a>
+                </li>
+                <li class="info-item py-2">
+                  <i class="bi bi-whatsapp me-2 text-success"></i>
+                  <strong>Téléphone/WhatsApp :</strong> +221 77 985 29 75
+                </li>
+                <li class="info-item py-2">
+                  <i class="bi bi-linkedin me-2 text-primary"></i>
+                  <strong>LinkedIn : </strong>
+                  <a href="https://www.linkedin.com/in/aliou-badji-874533222/" class="text-decoration-none"> Accéder à mon profil Linkedin</a>
+                </li>
+              </ul>
+
+              <!-- <div class="mt-3">
+                <a href="#contact" class="btn btn-success me-2">
+                  <i class="bi bi-send-fill me-1"></i> Me contacter
+                </a>
+                <a href="#" class="btn btn-outline-warning">
+
+                  <i class="bi bi-download me-1"></i> Télécharger CV
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

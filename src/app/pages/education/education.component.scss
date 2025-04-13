@@ -33,12 +33,12 @@
   overflow: hidden;
 }
 
-.text-gradient-icon {
+/* .text-gradient-icon {
   background: linear-gradient(45deg, #3a7bd5, #00d2ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .section-title {
   position: relative;
@@ -58,7 +58,7 @@
 
 .education-timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 820px;
   margin: 0 auto;
   padding-left: 30px;
 }
@@ -69,7 +69,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+  background-color: #0b940b;
   margin-left: 13px;
   border-radius: 10px;
 }
@@ -86,7 +86,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #3a7bd5;
+  background-color: #0b940b;;
   color: white;
   display: flex;
   align-items: center;

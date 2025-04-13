@@ -69,22 +69,24 @@
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding-left: 50px;
+  padding-left: 100px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
   width: 3px;
-  background-color: #3a7bd5;
+  background-color: #0b940b;
   top: 0;
   bottom: 0;
-  left: 40px;
+  left: 100px;
   margin-left: -1.5px;
   border-radius: 10px;
+  z-index: 1;
 }
+
 
 .timeline-item {
   position: relative;
@@ -93,35 +95,37 @@
 
 .timeline-badge {
   position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 0;
-  background-color: white;
-  border: 3px solid #3a7bd5;
+  width: 30px;
+  height: 30px;
+  left: 16px;  /* Aligné avec la ligne */
+  transform: translateX(-50%);  /* Centrage précis */
+  background-color:#0b940b;
+  //border: 3px solid white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
-  color: #3a7bd5;
-  font-size: 1.2rem;
+  color: white;
+  font-size: 1rem;
   box-shadow: 0 0 0 4px white;
 }
 
-.timeline-date {
+/* .timeline-date {
   position: absolute;
-  left: -150px;
-  width: 120px;
+  left: -100px;
+  width: 140px;
   text-align: right;
   top: 15px;
-}
+} */
 
 .timeline-content {
   position: relative;
-  margin-left: 80px;
+  margin-left: 90px;
   border-radius: 12px;
   transition: all 0.3s ease;
   border: none;
+  z-index: 2;
 }
 
 .timeline-content:hover {
@@ -130,7 +134,7 @@
 }
 
 .card-title {
-  color: #2c3e50;
+  color: #0b940b;
   padding-right: 30px;
 }
 
@@ -143,7 +147,7 @@
 }
 
 .technologies .badge:hover {
-  background-color: #3a7bd5 !important;
+  background-color: #1fb30b !important;
   color: white !important;
   transform: scale(1.05);
 }
@@ -158,16 +162,16 @@
   }
 
   .timeline-badge {
-    left: -25px;
+    left: 25px;
   }
 
-  .timeline-date {
+  /* .timeline-date {
     position: relative;
     left: 0;
     width: auto;
     text-align: left;
     margin-bottom: 10px;
-  }
+  } */
 
   .timeline-content {
     margin-left: 40px;

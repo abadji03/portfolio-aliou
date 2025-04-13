@@ -35,7 +35,7 @@
  */
 
  .about-section {
-  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  //background: linear-gradient(to bottom, #ffffff, #f8f9fa);
   position: relative;
 }
 
@@ -139,7 +139,7 @@
 }
 
 .info-card {
-  background-color: white;
+  //background-color: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -151,7 +151,7 @@
 }
 
 .info-title {
-  color: #3a7bd5;
+  color: #0ba138;
   font-weight: 600;
   position: relative;
   display: inline-block;
@@ -164,7 +164,7 @@
   left: 0;
   width: 50%;
   height: 2px;
-  background-color: #3a7bd5;
+  //background-color: #3a7bd5;
 }
 
 .info-item {

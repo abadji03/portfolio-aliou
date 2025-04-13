@@ -1,11 +1,11 @@
 <section class="education-section py-5" id="education">
   <div class="container">
     <div class="section-header text-center mb-5">
-      <h2 class="display-5 fw-bold position-relative d-inline-block">
-        <i class="bi bi-mortarboard me-3 text-gradient-icon"></i>
-        <span class="section-title">Parcours Académique</span>
+      <h2 class="display-5 text-success fw-bold position-relative d-inline-block">
+        <i class="bi bi-mortarboard me-3 text-gradient"></i>
+        <span class="section-title">Formations</span>
       </h2>
-      <p class="text-muted mt-2">Mes diplômes et certifications</p>
+      <p class="mt-2">Mes diplômes et certifications</p>
     </div>
 
     <div class="education-timeline">
@@ -20,12 +20,12 @@
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-start">
               <div>
-                <h4 class="card-title mb-1">{{ formation.diplome }}</h4>
-                <h6 class="card-subtitle text-primary">
+                <h4 class="card-title text-success mb-1">{{ formation.diplome }}</h4>
+                <h6 class="card-subtitle text-secondary">
                   <i class="bi bi-building me-2"></i>{{ formation.etablissement }}
                 </h6>
               </div>
-              <span class="badge bg-primary rounded-pill">{{ formation.periode }}</span>
+              <span class="badge bg-success rounded-pill">{{ formation.periode }}</span>
             </div>
 
             <div class="education-details mt-3">

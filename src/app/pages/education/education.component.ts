@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { formations } from '../../donnees.model';
 
 @Component({
   selector: 'app-education',
@@ -8,34 +9,13 @@ import { Component } from '@angular/core';
   templateUrl: './education.component.html',
   styleUrl: './education.component.scss'
 })
-export class EducationComponent {
+export class EducationComponent implements OnInit {
 
-  formations = [
-    {
-      diplome: 'Formation certifiante en Développement Front-End',
-      etablissement: 'FORCE-N, Université Numérique Cheikh Hamidou Kane (UN-CHK)',
-      periode: 'Sept. 2023 - Janv. 2024',
-      details: 'Spécialisée dans les technologies modernes du web (Angular, Bootstrap, etc.)'
-    },
-    {
-      diplome: 'Master en Informatique, mention Génie Logiciel',
-      etablissement: 'Université Assane SECK de Ziguinchor',
-      periode: '2017 - 2018',
-      mention: 'Bien'
-    },
-    {
-      diplome: 'Licence en Math, Physique, Chimie, Info – spécialité Informatique',
-      etablissement: 'Université Assane SECK de Ziguinchor',
-      periode: '2014 - 2015',
-      mention: 'Assez Bien'
-    },
-    {
-      diplome: 'Baccalauréat série S2 (Sciences Expérimentales)',
-      etablissement: 'Lycée Djignabo Bassène de Ziguinchor',
-      periode: '2011 - 2012',
-      mention: 'Passable'
-    }
-  ];
+  formations:any;
+
+  ngOnInit(): void {
+    this.formations = formations
+  }
 
   getEducationIcon(diplome: string): string {
     const iconMap: {[key: string]: string} = {
