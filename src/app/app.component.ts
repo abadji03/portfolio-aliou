@@ -34,7 +34,7 @@ export class AppComponent implements AfterViewInit{
   async ngAfterViewInit() {
     if (typeof window !== 'undefined') {
       const AOS = await import('aos');
-      AOS.init({
+      AOS.default.init({
         duration: 800,
         once: false,
         mirror: true, // rejoue aussi quand tu scrolles vers le haut
