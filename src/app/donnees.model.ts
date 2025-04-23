@@ -87,6 +87,36 @@ export const formations = [
 
   export const projets = [
     {
+      titre: 'Site vitrine Agrosotech Sénégal',
+      type: 'web',
+      auteurs: 'Aliou Badji (Agrosotech Sénégal)',
+      description: 'Participation création du site de l\'entreprise et responsable de la maintenance de celui-ci ',
+      technologies: ['WordPress'],
+      date: 'Décembre 2024',
+      lien: 'https://agrosotech.net/',
+      github: null
+    },
+    {
+      titre: 'Application de gestion de Caisse (en cours de développement)',
+      type: 'web',
+      auteurs: 'Aliou Badji (Agrosotech Sénégal)',
+      description: 'Création d\'une application de gestion de caisse pour  l\'entreprise Agrosotech Sénégal',
+      technologies: ['Angular','Bootsrap','Node Js', 'MySQL'],
+      date: 'Février 2024',
+      lien: 'https://senwela.com/?woo-share=EbSZq9ytyTSrJo9jfEsVzlTe9CfTfDdf',
+      github: null
+    },
+    {
+      titre: 'Site de vente en ligne de Agrosotech Sénégal (en cours de Développement)',
+      type: 'web',
+      auteurs: 'Aliou Badji (Agrosotech Sénégal)',
+      description: 'Création du site de vente en ligne de l\'entreprise Agrosotech Sénégal',
+      technologies: ['WordPress','PHP','Bootsrap'],
+      date: 'Septembre 2024',
+      lien: 'https://senwela.com/?woo-share=EbSZq9ytyTSrJo9jfEsVzlTe9CfTfDdf',
+      github: null
+    },
+    {
       titre: 'Information and Discussion Platform in the Context of Monitoring PLHIV in Border Areas and During COVID-19',
       type: 'research',
       auteurs: 'Badji A. (Auteur principal), Dieng Y., Diop I.',
@@ -122,8 +152,8 @@ export const formations = [
       auteurs: 'Aliou Badji (Startup Jcaisse)',
       description: 'Ajout de modules de vente et de gestion de profils utilisateurs sur une application Android existante.',
       technologies: ['Android (Java)', 'MySQL', 'Node js', 'Retrofit', 'UI/UX'],
-      date: '2022',
-      lien: null,
+      date: 'Septembre 2022',
+      lien: 'https://drive.google.com/file/d/1Zg3qjkZDmG7PESknWGNj9lm19MESbTiH/view?usp=sharing',
       github: null
     },
     {
