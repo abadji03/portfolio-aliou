@@ -6,7 +6,7 @@ export const formations = [
       details: 'Spécialisée dans les technologies modernes du web (Angular, Bootstrap, etc.)'
     },
     {
-      diplome: 'Doctorant en Informatique spécialité Modélisation et simulation de systèmes complexes',
+      diplome: 'Doctorat en Informatique spécialité Modélisation et simulation de systèmes complexes',
       etablissement: 'Université Assane SECK de Ziguinchor',
       periode: 'Mars 2019 - Dec. 2022',
       details: 'Etude sur le problème des perdus de vue dans le cadre du suivi des PVVIH en zones transfrontalières entre la Gambie, la Guinée Bissau et le Sénégal',
