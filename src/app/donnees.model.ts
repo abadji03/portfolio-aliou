@@ -103,7 +103,7 @@ export const formations = [
       description: 'Création d\'une application de gestion de caisse pour  l\'entreprise Agrosotech Sénégal',
       technologies: ['Angular','Bootsrap','Node Js', 'MySQL'],
       date: 'Février 2024',
-      lien: 'https://senwela.com/?woo-share=EbSZq9ytyTSrJo9jfEsVzlTe9CfTfDdf',
+      lien: null,
       github: null
     },
     {
