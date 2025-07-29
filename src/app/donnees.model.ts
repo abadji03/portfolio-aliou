@@ -107,7 +107,7 @@ export const formations = [
       github: null
     },
     {
-      titre: 'Site de vente en ligne de Agrosotech Sénégal (en cours de Développement)',
+      titre: 'Site de vente en ligne de Agrosotech Sénégal',
       type: 'web',
       auteurs: 'Aliou Badji (Agrosotech Sénégal)',
       description: 'Création du site de vente en ligne de l\'entreprise Agrosotech Sénégal',
@@ -153,7 +153,7 @@ export const formations = [
       description: 'Ajout de modules de vente et de gestion de profils utilisateurs sur une application Android existante.',
       technologies: ['Android (Java)', 'MySQL', 'Node js', 'Retrofit', 'UI/UX'],
       date: 'Septembre 2022',
-      lien: 'https://drive.google.com/file/d/1Zg3qjkZDmG7PESknWGNj9lm19MESbTiH/view?usp=sharing',
+      lien: 'https://drive.google.com/file/d/1NRJue_iY1rZbrKl6Y0Vqtmve3OstIpKo/view?usp=sharing',
       github: null
     },
     {
