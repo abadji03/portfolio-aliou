@@ -113,7 +113,7 @@ export const formations = [
       description: 'Création du site de vente en ligne de l\'entreprise Agrosotech Sénégal',
       technologies: ['WordPress','PHP','Bootsrap'],
       date: 'Septembre 2024',
-      lien: 'https://senwela.com/?woo-share=EbSZq9ytyTSrJo9jfEsVzlTe9CfTfDdf',
+      lien: 'https://senwela.com',
       github: null
     },
     {
